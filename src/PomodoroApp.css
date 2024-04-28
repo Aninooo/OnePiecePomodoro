@@ -51,15 +51,7 @@ h1 {
   background-color: black; 
 }
 
-.background-container {
-  background-image: url('./assets/map1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
+
 
 .footer {
   display: flex;
@@ -74,3 +66,13 @@ h1 {
   font-size: 20px;
   text-decoration: underline;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/map1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff; 
+}
+
