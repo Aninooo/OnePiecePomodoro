@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions, FormControl, FormLabel } from '@mui/material';
@@ -190,7 +191,7 @@ const PomodoroApp = () => {
               top: '50px', 
               right: '300px',
               border: '5px solid transparent', 
-              boxShadow: '0px 0px 10px yellow', 
+              boxShadow: '0px 0px 6px black', 
               transform: `rotateX(${isTurningPage ? -20 : -10}deg) rotateY(${isTurningPage ? -20 : -10}deg) scale(${isTurningPage ? 0.85 : 0.95})`, 
             }}
             initial={{ opacity: 0 }} 
@@ -248,7 +249,7 @@ const PomodoroApp = () => {
         <Dialog open={openSettings} onClose={handleSettingsClose}>
           <DialogTitle>Settings</DialogTitle>     
           <DialogContent>
-            <FormControl>
+            <FormControl style={{ marginLeft: '10px' }}>
               <FormLabel>Focus Time</FormLabel>
               <select onChange={handleWorkTimeChange} value={workTime}>
                 <option value={25}>25 minutes</option>
@@ -259,17 +260,23 @@ const PomodoroApp = () => {
                 <option value={120}>2 hours</option>
               </select>
             </FormControl>
-            <FormControl>
+            <FormControl style={{ marginLeft: '10px' }}>
               <FormLabel>Break Time</FormLabel>
               <select onChange={handleBreakTimeChange} value={breakTime}>
                 <option value={5}>5 minutes</option>
                 <option value={10}>10 minutes</option>
-                {/* Add more options as needed */}
+                <option value={60}>1 hour</option>
+              </select>
+            </FormControl>
+            <FormControl style={{ marginLeft: '10px' }}>
+              <FormLabel>Notification Sound</FormLabel>
+              <select onChange={handleSoundChange} value={notificationSound}>
+                <option value={alarm1}>Putang Inamo</option>
               </select>
             </FormControl>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleSettingsClose}>Close</Button>
+            <Button onClick={handleSettingsClose}>Ok</Button>
           </DialogActions>
         </Dialog>
       </div>
