@@ -154,7 +154,8 @@ const PomodoroApp = () => {
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '20px' }}>
           <h1 ref={titleRef} className="title-line" style={{ fontFamily: 'OnePieceFont', textShadow: '1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black', marginBottom: '10px' }}>
-            <div style={{ width: `${titleRef.current ? titleRef.current.offsetWidth : 'auto'}px`, height: '5px', background: '#58acf4' }}></div>
+            <div style={{ width: `${titleRef.current ? titleRef.current.offsetWidth : 'auto'}px`, height: '5px', background: '#58acf4', borderTop: '2px solid black',
+  borderBottom: '2px solid black' }}></div>
             <span style={{ color: '#58acf4' }}>P</span>
             <span style={{ color: '#58acf4' }}>o</span>
             <span style={{ color: '#58acf4' }}>m</span>
@@ -172,7 +173,8 @@ const PomodoroApp = () => {
             <span style={{ color: '#58acf4', fontFamily: 'Bleeding Cowboys', fontFeatureSettings: '"ss01"' }}>o</span>
             <span style={{ color: '#58acf4' }}>s</span>
             <span style={{ color: '#58acf4' }}>E</span>
-            <div style={{ width: `${titleRef.current ? titleRef.current.offsetWidth : 'auto'}px`, height: '5px', background: '#58acf4' }}></div>
+            <div style={{ width: `${titleRef.current ? titleRef.current.offsetWidth : 'auto'}px`, height: '5px', background: '#58acf4', borderTop: '2px solid black',
+  borderBottom: '2px solid black' }}></div>
           </h1>
         </div>
 
