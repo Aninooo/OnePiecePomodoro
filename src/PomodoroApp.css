@@ -32,7 +32,7 @@ h1 {
   font-size: 50px; 
   background-size: contain; 
   background-position: center; 
-  border: 3px solid yellow; 
+  border: 3px solid #D2BE76; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 20); 
 }
 
@@ -48,7 +48,7 @@ h1 {
 
 .control-buttons button {
   margin: 0 3px; 
-  color: yellow;
+  color: #D2BE76;
   background-color: black; 
 }
 
